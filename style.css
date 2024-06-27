@@ -172,6 +172,7 @@ CSS for ABOUT */
   width: 100%;
   align-items: center;
   justify-content: center;
+  z-index: 25;
 }
 .Skill > img {
   height: 70px;
@@ -180,76 +181,192 @@ CSS for ABOUT */
   position: absolute;
   z-index: 12;
 }
+.checked {
+  color: green;
+}
+.htmldiv {
+  display: flex;
+  position: relative;
+  left: 60%;
+  top: 22%;
+  height: 60px;
+  width: 180px;
+}
+.htmlhide {
+  display: none;
+  padding-left: 10px;
+}
+#html:hover + .htmlhide {
+  display: block;
+}
 
-#html {
-  position: absolute;
-  padding-left: 59%;
-  margin-top: 10%;
-  border-radius: 50%;
+.cssdiv {
+  display: flex;
+  position: relative;
+  left: 62%;
+  height: 60px;
+  width: 180px;
 }
-#css {
-  position: absolute;
-  padding-left: 62%;
-  margin-top: 2.5%;
+.csshide {
+  display: none;
+  padding-left: 10px;
 }
-#js {
-  position: absolute;
-  padding-left: 52%;
-  margin-top: -10%;
+#css:hover + .csshide {
+  display: block;
 }
-#pg {
-  position: absolute;
-  padding-left: 36%;
-  margin-top: 11%;
+
+.jsdiv {
+  display: flex;
+  position: relative;
+  left: 61%;
+  top: -23%;
+  height: 60px;
+  width: 180px;
 }
-#node {
-  position: absolute;
-  padding-left: 36%;
-  margin-top: -5%;
+.jshide {
+  display: none;
+  padding-left: 10px;
 }
-#mongo {
-  position: absolute;
-  padding-left: 33%;
-  margin-top: 3%;
+#js:hover + .jshide {
+  display: block;
 }
-#bootstrap {
-  position: absolute;
-  padding-left: 59%;
-  margin-top: -5%;
-  border-radius: 50%;
+
+.bootstrapdiv {
+  display: flex;
+  position: relative;
+  left: 56%;
+  top: -44%;
+  height: 60px;
+  width: 180px;
+}
+.bootstraphide {
+  display: none;
+  padding-left: 10px;
+}
+#bootstrap:hover + .bootstraphide {
+  display: block;
 }
 #react {
-  position: absolute;
-  padding-left: 43%;
-  margin-top: -11%;
+  height: 60px;
+  width: 60px;
 }
-#git
-{
-  position: absolute;
-  padding-left: 42%;
-  margin-top: 2%;
+.reactdiv {
+  display: flex;
+  position: relative;
+  left: 49%;
+  top: -59%;
+  height: 60px;
+  width: 180px;
+}
+.reacthide {
+  display: none;
+  padding-left: 1px;
+}
+#react:hover + .reacthide {
+  display: block;
+}
 
+#node {
+  border: 1px solid rgba(0, 0, 0, 0.088);
+  height: 60px;
+  width: 60px;
 }
+.nodediv {
+  display: flex;
+  position: relative;
+  top: -67%;
+  left: 41%;
+
+  height: 60px;
+  width: 180px;
+}
+.nodehide {
+  display: none;
+  position: relative;
+  left: -95%;
+}
+#node:hover + .nodehide {
+  display: block;
+}
+
+.mongodiv {
+  display: flex;
+  position: relative;
+  top: -67%;
+  left: 36%;
+
+  height: 60px;
+  width: 180px;
+}
+.mongohide {
+  display: none;
+  position: relative;
+  left: -95%;
+}
+#mongo:hover + .mongohide {
+  display: block;
+}
+
+.pgdiv {
+  display: flex;
+  position: relative;
+  top: -62%;
+  left: 33%;
+
+  height: 60px;
+  width: 180px;
+}
+.pghide {
+  display: none;
+  position: relative;
+  left: -95%;
+}
+#pg:hover + .pghide {
+  display: block;
+}
+
+.gitdiv {
+  display: flex;
+  position: relative;
+  top: -58%;
+  left: 33%;
+
+  height: 60px;
+  width: 180px;
+}
+.githide {
+  display: none;
+  position: relative;
+  left: -95%;
+}
+#git:hover + .githide {
+  display: block;
+}
+
 #github
 {
-  position: absolute;
-  padding-left: 54%;
-  margin-top: 2%;
-}
-
-.checked {
-  color: orange;
-}
-
-.htmlhide{
-  display: none;
-}
-#html:hover + .htmlhide
-{
-  display: block;
   position: relative;
+  height: 60px;
+  width: 60px;
 }
+.githubdiv {
+  display: flex;
+  position: relative;
+  top: -54%;
+  left: 35%;
 
+  height: 60px;
+  width: 180px;
+}
+.faltuk {
+  display: none;
+  position: relative;
+   left: -95%;
+  
+}
+#github:hover + .faltuk{
+  display: block;
+}
 /* project section */
 
 .Projects {
@@ -257,7 +374,7 @@ CSS for ABOUT */
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color:rgb(190, 184, 185);
+  background-color: rgb(190, 184, 185);
 }
 .Projects > div {
   height: 100vh;
@@ -265,10 +382,9 @@ CSS for ABOUT */
 }
 .Projects > div > h1 {
   font-size: 5rem;
-  padding-top:13% ;
+  padding-top: 13%;
   padding-left: 25%;
   text-shadow: 2px 2px white;
-  
 }
 .Projects > div > img {
   height: 58vh;
@@ -277,8 +393,7 @@ CSS for ABOUT */
 }
 
 /* contact section */
-.Contact
-{
+.Contact {
   display: block;
   position: relative;
   height: 40vh;
@@ -287,14 +402,10 @@ CSS for ABOUT */
   color: white;
   text-shadow: 2px 2px gray;
 }
-.Contact>h1
-{
+.Contact > h1 {
   font-size: 3rem;
   padding: 50px;
 }
-#Contactimg
-{
-  padding-left:30px ;
+#Contactimg {
+  padding-left: 30px;
 }
-
-
