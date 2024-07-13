@@ -358,15 +358,10 @@ CSS for ABOUT */
   height: 60px;
   width: 180px;
 }
-.faltuk {
-  display: none;
-  position: relative;
-   left: -95%;
-  
-}
-#github:hover + .faltuk{
-  display: block;
-}
+
+
+
+
 /* project section */
 
 .Projects {
